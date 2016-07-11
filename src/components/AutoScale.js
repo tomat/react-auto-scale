@@ -1,14 +1,21 @@
 import React, { Component, PropTypes } from 'react';
 import ere from 'element-resize-event';
 
-class AutoScale extends Component {
+export default class AutoScale extends Component {
   static propTypes = {
     children: PropTypes.node,
+    wrapperClass: PropTypes.string,
     containerClass: PropTypes.string,
     contentClass: PropTypes.string,
     maxHeight: PropTypes.number,
     maxWidth: PropTypes.number,
     maxScale: PropTypes.number,
+  };
+
+  static defaultProps = {
+    wrapperClass: '',
+    containerClass: '',
+    contentClass: '',
   };
 
   constructor() {
@@ -71,8 +78,8 @@ class AutoScale extends Component {
   render() {
     const { scale, contentSize } = this.state;
     const { children, wrapperClass, containerClass, contentClass } = this.props;
-    let containerHeight = (scale * contentSize.height);
-    let containerWidth = (scale * contentSize.width);
+    const containerHeight = (scale * contentSize.height);
+    const containerWidth = (scale * contentSize.width);
 
     return (
       <div ref="wrapper" className={wrapperClass}>
@@ -85,5 +92,3 @@ class AutoScale extends Component {
     );
   }
 }
-
-export default AutoScale;
