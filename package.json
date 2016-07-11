@@ -19,7 +19,8 @@
     "reactjs",
     "scale",
     "transform",
-    "resize"
+    "resize",
+    "react-component"
   ],
   "author": "tomat",
   "license": "MIT",
