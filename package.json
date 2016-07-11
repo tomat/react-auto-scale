@@ -1,0 +1,62 @@
+{
+  "name": "react-auto-scale",
+  "version": "0.0.1",
+  "description": "Wrap a single child with this component to make it auto-scale to fit its parent (or a maximum size specified through props).",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib dist coverage",
+    "lint": "eslint src test",
+    "prepublish": "npm run clean && npm run lint && npm run build",
+    "watch": "npm run build -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomat/react-auto-scale.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "scale",
+    "transform",
+    "resize"
+  ],
+  "author": "tomat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomat/react-auto-scale/issues"
+  },
+  "homepage": "https://github.com/tomat/react-auto-scale",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^5.0.0-beta9",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-decorators-legacy": "^1.2.0",
+    "babel-preset-es2015-loose": "^6.1.4",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "eslint": "^1.7.1",
+    "eslint-config-rackt": "1.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "expect": "^1.8.0",
+    "isparta": "4.0.0",
+    "istanbul": "^0.3.17",
+    "jsdom": "~5.4.3",
+    "mocha": "^2.2.5",
+    "react": "0.14.8",
+    "react-addons-test-utils": "^0.14.0",
+    "react-dom": "0.14.8",
+    "react-redux": "4.4.1",
+    "react-refetch": "1.0.0-beta.4",
+    "redux": "3.3.1",
+    "rimraf": "^2.3.4",
+    "webpack": "2.1.0-beta.7"
+  },
+  "dependencies": {
+    "element-resize-event": "^2.0.5"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-rc"
+  }
+}
