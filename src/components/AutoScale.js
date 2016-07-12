@@ -84,7 +84,7 @@ export default class AutoScale extends Component {
     return (
       <div ref="wrapper" className={wrapperClass}>
         <div ref="container" className={containerClass} style={{ maxWidth: '100%', overflow: 'hidden', width: containerWidth + 'px', height: containerHeight + 'px' }}>
-          <div ref="content" className={contentClass} style={{ transform: 'scale(' + scale + ')', transformOrigin: '0 0 0', }}>
+          <div ref="content" className={contentClass} style={{ transform: 'scale(' + scale + ')' }}>
             {React.Children.only(children)}
           </div>
         </div>
