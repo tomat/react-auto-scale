@@ -20,7 +20,7 @@ var config = {
     ]
   },
   output: {
-    library: 'ReactReflorp',
+    library: 'ReactAutoScale',
     libraryTarget: 'umd'
   },
   plugins: [

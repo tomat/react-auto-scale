@@ -70,7 +70,7 @@ export default class MyComponent extends Component {
 
 ## Support
 
-This software is provided "as is", without warranty or support of any kind, express or implied. See [license](https://github.com/tomat/react-reflorp/blob/master/LICENSE.md) for details.
+This software is provided "as is", without warranty or support of any kind, express or implied. See [license](https://github.com/tomat/react-auto-scale/blob/master/LICENSE.md) for details.
 
 ## License
 
